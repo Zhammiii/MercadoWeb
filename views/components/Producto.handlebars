@@ -1,0 +1,23 @@
+{{#each verduras}}
+  <div class="container col-6 m-1 producto">
+    <div class="card imagen-hover">
+      <img src="{{this.imagen}}" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">{{this.nombre}}</h5>
+      </div>
+      <div class="overlay">
+
+        
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .card { border: none; } .imagen-hover { position: relative; } .imagen-hover
+    .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  opacity: 0; 
+    transition: opacity 0.3s ease; } .imagen-hover:hover
+    .overlay { opacity: 1; }
+
+  </style>
+{{/each}}
