@@ -20,7 +20,7 @@ app.set("view engine", "handlebars");
 /* BOOTSTRAP MIDDLEWARE */
 app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/js"));
-app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'))
+app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist"))
 
 
 /* RUTA GET */

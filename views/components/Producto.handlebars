@@ -1,9 +1,9 @@
-<div class=" d-flex flex-wrap justify-content-center m-3 p-5">
-  {{#each verduras }}
+<div class="d-flex flex-wrap justify-content-center m-3 p-5">
+  {{#each verduras}}
     <div class="border m-2 text-center col-3">
       <h2 class="text-capitalize m-1">{{this.nombre}}</h2>
-      <button class="btn m-6">
-        <img src="{{this.imagen}}" alt="{{this.nombre}}" id="{{this.nombre}}" />
+      <button class="btn m-6 card-producto">
+        <img class="w-75" src="{{this.imagen}}" alt="{{this.nombre}}"/>
       </button>
     </div>
   {{/each}}

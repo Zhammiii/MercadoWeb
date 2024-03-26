@@ -10,15 +10,26 @@
         {{> Nav}}
         {{> Saludo}}
         {{> Producto}}
-
-        {{!-- scipts --}}
     <script src="https://kit.fontawesome.com/26f1f0d8af.js" crossorigin="anonymous"></script>
-    <script src="/jquery/jquery.js"></script>
     <script src="/css/bootstrap.js"></script>
+    <script src="/jquery/jquery.js"></script>
     </body>
 </html>
 
+{{!-- Logica del modal --}}
+<script>
+  $(document).ready(function() {
+        $('.card-producto').click(function(event) {
+      if (!$(this).prop('disabled')) {
+        let imgSrc = $(this).find('img').attr('src');
+        let imgElement = $('<img>').attr('src', imgSrc).addClass('p-3 w-25');
+        $('#productosContainer').append(imgElement);
 
+        $(this).prop('disabled', true);
+      }
+    });
+  });
+</script>
 
 
 

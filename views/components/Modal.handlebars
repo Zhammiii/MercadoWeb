@@ -1,30 +1,40 @@
-<!-- Button trigger modal -->
+{{! Boton Trigger }}
 <button
   type="button"
-  class="btn"
+  class="btn btn-success"
   data-bs-toggle="modal"
-  data-bs-target="#exampleModal">
-<i class="fa-solid fa-cart-plus fs-2"></i>
+  data-bs-target="#modalProductos"
+>
+  <i class="fa-solid fa-cart-shopping fs-1"></i>
 </button>
 
-<!-- Modal -->
+{{! MODAL }}
 <div
   class="modal fade"
-  id="exampleModal"
+  id="modalProductos"
   tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
+  aria-labelledby="modalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
+      <div class="modal-header d-flex justify-content-center">
+        <h2
+          class="modal-title text-center fs-2"
+          id="modalLabel"
+        >Productos agregados:</h2>
+      </div>
       <div class="modal-body">
-        ...
+        <div class="text-center" id="productosContainer"></div>
       </div>
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-secondary"
+          class="btn btn-secondary text-white"
           data-bs-dismiss="modal"
-        >Close</button>
+        >
+          Cerrar
+        </button>
       </div>
     </div>
   </div>
